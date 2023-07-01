@@ -11,41 +11,57 @@
     <!-- HEADER -->
     <!-- <load src="./partial/header.html"/> -->
     <header>
-        <div class="container header">
-            <a href="" class="link logo">
-                <svg width="16" height="16" class="logo-icon">
-                    <use href="./images/icons.svg#logo"></use>
-                </svg>
-                veggieboost
-            </a>
-            <button type="button" class="menu-btn" data-menu-button>
-                <svg width="24" height="24" class="menu-icon">
-                    <use 
-                        href="./images/icons.svg#menu-left" 
-                        class="menu-open-icon">
-                    </use>
-                    <use 
-                        href="./images/icons.svg#x" 
-                        class="menu-close-icon"
-                        style="stroke: #77AC63;">
-                    </use>
-                </svg>
-                
-            </button>
-        </div>
-        <div class="container menu" data-menu>
-            <nav class="menu-nav">
-                <ul class="list menu-list">
-                    <li><a href="" class="link menu-item">How It Works</a></li>
-                    <li><a href="" class="link menu-item">Vegetables</a></li>
-                    <li><a href="" class="link menu-item">Contacts</a></li>
-                    <li><a href="" class="link menu-item icon">
-                        <svg width="20" height="20">
-                            <use href="./images/icons.svg#shopping-cart"></use>
+        <div class="container header-cont">
+            <div class="header">
+                <nav class="menu-nav">
+                    <ul class="list menu-list">
+                        <li><a href="" class="link menu-item">How It Works</a></li>
+                        <li><a href="" class="link menu-item">Vegetables</a></li>
+                        <li><a href="" class="link menu-item">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <a href="" class="link logo">
+                    <svg width="16" height="16" class="logo-icon">
+                        <use href="./images/icons.svg#logo"></use>
+                    </svg>
+                    veggieboost
+                </a>
+
+                <button type="button" class="menu-btn" data-menu-button>
+                    <svg width="24" height="24" class="menu-icon">
+                        <use 
+                            href="./images/icons.svg#menu-left" 
+                            class="menu-open-icon">
+                        </use>
+                        <use 
+                            href="./images/icons.svg#x" 
+                            class="menu-close-icon"
+                            style="stroke: #77AC63;">
+                        </use>
+                    </svg>
+                </button>
+
+                <button type="button" class="cart-btn">
+                    <svg class="cart-icon">
+                        <use href="./images/icons.svg#icon-shopping-cart">
+                        </use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu" data-menu>
+                    <ul class="list mob-menu-list">
+                        <li><a href="" class="link mob-menu-item">How It Works</a></li>
+                        <li><a href="" class="link mob-menu-item">Vegetables</a></li>
+                        <li><a href="" class="link mob-menu-item">Contacts</a></li>
+                    </ul>
+                    <button type="button" class="mob-menu-btn-cart">
+                        <svg width="20" height="20" class="mob-cart-icon">
+                            <use href="./images/icons.svg#icon-shopping-cart">
+                            </use>
                         </svg>
-                    </a></li>
-                </ul>
-            </nav>
+                    </button>
+            </div>
         </div>
     </header>
     <!-- MAIN -->
