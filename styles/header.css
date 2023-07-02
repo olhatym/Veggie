@@ -1,3 +1,9 @@
+.header-cont {
+    /* position: fixed; */
+    /* height: 50px;
+    background-color: var(--color-white); */
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -43,6 +49,8 @@
 
 .mob-menu {
     position: fixed;
+    top: 50px;
+    z-index: 100;
     background-color: var(--color-green);
     padding-top: 124px;
     width: 100%;
@@ -153,6 +161,8 @@
         font-size: 14px;
         line-height: 1.28;
         letter-spacing: -0.56px;
+
+        transition: color var(--transition);
     }
 
     .menu-item:hover,
@@ -179,6 +189,8 @@
         height: 20px;
         stroke: var(--color-black);
         fill: var(--color-white);
+
+        transition: stroke var(--transition);
     }
 
     .cart-btn:hover .cart-icon {
