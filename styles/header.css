@@ -66,8 +66,12 @@
     transition: var(--transition);
 }
 
-.mob-menu.is-open.is-open {
+.mob-menu.is-open {
     transform: translateX(-20px);
+}
+
+.no-scroll {
+    overflow:hidden;
 }
 
 .menu-btn.is-open .menu-open-icon {
@@ -197,6 +201,8 @@
         stroke: var(--color-green);
     }
 }
+
+/* DESCKTOP */
 
 @media screen and (min-width: 1280px) {
     .container {

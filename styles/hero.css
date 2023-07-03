@@ -97,7 +97,6 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-bottom: 8px;
 
     background-color: var(--color-light-orange);
     border: none;
@@ -122,6 +121,10 @@
     background-color: var(--color-light-green);
 
     color: var(--color-green);
+}
+
+.hero-left-side {
+    margin-bottom: 8px;
 }
 
 .hero-img-cont {

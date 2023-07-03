@@ -1,0 +1,163 @@
+
+.steps-cont {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background-color: var(--color-light-orange);
+    background-image: url(../images/BG-steps-mob.png);
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 40px;
+
+}
+
+.steps-header-list {
+    margin-bottom: 20px;
+}
+
+.steps-header {
+    color: var(--color-black);
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+.steps-list {
+    width: calc(176px + 40px + 14px);
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    counter-reset: my-counter;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.steps-item {
+    list-style: none;
+
+    color: var(--color-black);
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+
+    display: flex;
+    align-items: center;
+}
+
+.steps-item::before {
+    counter-increment: my-counter;
+    content: counter(my-counter);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 38px;
+    padding: 10px 17px;
+    border-radius: 200px;
+    background-color: var(--color-green);
+    color: var(--color-black);
+
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.72px;
+    margin-right: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.steps-pic {
+    width: 100%;
+    max-width: 258px;
+    margin: 0 auto;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .steps-cont {
+        padding-right: 40px;
+        padding-left: 0;
+    
+        background-image: url(../images/BG-steps-tab.png);
+    
+        border-radius: 80px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 40px;
+        justify-content: start;
+    }
+    
+    .steps-header-list {
+        margin-bottom: 0px;
+        padding-top: 40px;
+        width: 274px;
+    }
+
+    .steps-header {
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -1.12px;
+    }
+
+    .steps-list {
+        width: calc(176px + 46px + 14px);
+    }
+
+    .steps-item::before {
+        width: 46px;
+        height: 44px;
+        padding: 10px 20px;
+    
+        line-height: 1.33;
+    }
+
+    .steps-pic {
+        max-width: 350px;
+        margin: 0;        
+    }  
+}
+
+/* DESCKTOP */
+
+@media screen and (min-width: 1280px) {
+    .steps-cont {
+        padding-right: 80px;
+        padding-left: 80px;
+    
+        background-image: url(../images/BG-steps-desc.png);
+    
+        column-gap: 110px;
+    }
+
+    .steps-header-list {
+        width: 512px;
+    }
+
+    .steps-header {
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: -1.6px;
+    }
+
+    .steps-pic {
+        max-width: 434px;
+    }
+
+    .steps-list {
+        width: calc(289px + 46px + 14px);
+    }
+
+}
